@@ -1,72 +1,484 @@
+// FreeCore documentation skin: monochrome pixel sci-fi
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap')
 
-// 评论区颜色重置
-.gt-container
-  .gt-ico-tip
-    &::after
-      content: '。( Win + . ) 或 ( ⌃ + ⌘ + ␣ ) 打开表情'
-      color: #999
-      font-size: .8rem
-  .gt-meta
-    border-color var(--borderColor)!important
-  .gt-comments-null
-    color var(--textColor)
-    opacity .5
-  .gt-header-textarea
-    color var(--textColor)
-    background rgba(180,180,180,0.1)!important
-  .gt-btn
-    border-color $accentColor!important
-    background-color $accentColor!important
-  .gt-btn-preview
-    background-color rgba(255,255,255,0)!important
-    color $accentColor!important
-  a
-    color $accentColor!important
-  .gt-svg svg
-    fill $accentColor!important
-  .gt-comment-content,.gt-comment-admin .gt-comment-content
-    background-color rgba(150,150,150,0.1)!important
+:root
+  --fc-bg #090909
+  --fc-panel #101010
+  --fc-panel-raised #171717
+  --fc-line #2c2c2c
+  --fc-line-bright #555
+  --fc-text #e7e7e7
+  --fc-muted #9a9a9a
+  --fc-dim #6f6f6f
+  --fc-pixel-font 'Press Start 2P', 'Courier New', monospace
+
+html, body
+  background var(--fc-bg) !important
+  color var(--fc-text) !important
+
+body
+  font-family Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif
+  overflow-x hidden
+
+body::before
+  content ''
+  position fixed
+  z-index 0
+  inset 0
+  pointer-events none
+  opacity .42
+  background-image radial-gradient(circle, rgba(255,255,255,.72) 0 1px, transparent 1.5px), radial-gradient(circle, rgba(255,255,255,.32) 0 1px, transparent 1.5px)
+  background-position 7% 19%, 72% 61%
+  background-size 173px 149px, 233px 197px
+  animation fc-particles 26s linear infinite
+
+@keyframes fc-particles
+  0%
+    transform translate3d(0, 0, 0)
+    opacity .28
+  50%
+    transform translate3d(-12px, 14px, 0)
+    opacity .52
+  100%
+    transform translate3d(8px, -10px, 0)
+    opacity .3
+
+.theme-container
+  position relative
+  z-index 1
+  min-height 100vh
+  background linear-gradient(180deg, #0a0a0a 0%, #111 48%, #0b0b0b 100%) !important
+
+.theme-container::before
+  content ''
+  position fixed
+  z-index 0
+  inset 0
+  pointer-events none
+  opacity .34
+  background-image radial-gradient(circle, rgba(255,255,255,.72) 0 1px, transparent 1.5px), radial-gradient(circle, rgba(255,255,255,.28) 0 1px, transparent 1.5px)
+  background-position 7% 19%, 72% 61%
+  background-size 173px 149px, 233px 197px
+  animation fc-particles 26s linear infinite
+
+.theme-container::after
+  content ''
+  position fixed
+  z-index -1
+  inset 0
+  pointer-events none
+  opacity .13
+  background-image linear-gradient(rgba(255,255,255,.16) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.16) 1px, transparent 1px)
+  background-size 32px 32px
+  mask-image linear-gradient(to bottom, #000, transparent 72%)
+
+// Landing page keeps the same visual system while retaining the theme's feature links.
+.home-wrapper
+  background transparent !important
+  .banner
+    margin-top 64px !important
+    min-height 420px
+    background radial-gradient(circle at 50% 25%, #252525 0, #111 48%, #090909 100%) !important
+    border-bottom 1px solid var(--fc-line)
+    .banner-conent
+      max-width 1100px
+      padding 78px 28px 40px
+      .hero
+        h1
+          color #f2f2f2
+          font-family var(--fc-pixel-font)
+          font-size clamp(1.8rem, 5vw, 3.6rem)
+          text-shadow 4px 4px 0 #444, 7px 7px 0 #000
+        .description
+          color #aaa
+          font-size 1rem
+      .feature
+        max-width 31%
+        a
+          color #ddd
+          padding 18px 12px
+          border 1px solid #383838
+          background rgba(20,20,20,.72)
+          box-shadow 4px 4px 0 rgba(0,0,0,.45)
+          transition transform .2s ease, border-color .2s ease, background .2s ease
+          &:hover
+            color #fff
+            text-decoration none
+            border-color #aaa
+            background #1b1b1b
+            transform translateY(-4px)
+          .feature-img
+            filter grayscale(1) contrast(1.2)
+            image-rendering pixelated
+          h2
+            color #eee
+            font-family var(--fc-pixel-font)
+            font-size .8rem
+          p
+            color #999
+            font-size .86rem
+  .main-wrapper
+    max-width 1100px
+    margin-top 30px
+    .card-box
+      background #111 !important
+      border 1px solid #2f2f2f
+      border-radius 2px
+      box-shadow 4px 4px 0 rgba(0,0,0,.4)
+    .main-right .card-box
+      background #101010 !important
+
+.navbar
+  height 64px
+  padding 0 28px
+  display flex
+  align-items center
+  background rgba(10,10,10,.95) !important
+  border-bottom 1px solid var(--fc-line)
+  box-shadow 0 8px 30px rgba(0,0,0,.3) !important
+  backdrop-filter blur(14px)
+  -webkit-backdrop-filter blur(14px)
+  .home-link
+    display flex
+    align-items center
+    gap 12px
+    .logo
+      width 30px
+      height 30px
+      margin 0
+      object-fit contain
+      image-rendering pixelated
+      filter grayscale(1) contrast(1.2)
+    .site-name
+      color var(--fc-text) !important
+      font-family var(--fc-pixel-font)
+      font-size .72rem
+      letter-spacing .08em
+      text-transform uppercase
+      text-shadow 2px 2px 0 #000
+  .links
+    display flex
+    align-items center
+    gap 12px
+    .search-box input
+      height 34px
+      border 1px solid var(--fc-line-bright)
+      border-radius 2px
+      background #0d0d0d
+      color var(--fc-text)
+      font-family 'Courier New', monospace
+      &:focus
+        border-color #aaa
+        box-shadow 0 0 0 2px rgba(255,255,255,.08)
+  .nav-item > a, .repo-link
+    color var(--fc-muted) !important
+    font-size .85rem
     &:hover
-      box-shadow 0 0 25px rgba(150,150,150,.5)!important
-    .gt-comment-body
-      color var(--textColor)!important
+      color #fff !important
 
+.sidebar-button
+  color #ddd !important
 
-// qq徽章
-.qq
-  position: relative;
-.qq::after
-  content: "可撩";
-  background: $accentColor;
-  color:#fff;
-  padding: 0 5px;
-  border-radius: 10px;
-  font-size:12px;
-  position: absolute;
-  top: -4px;
-  right: -35px;
-  transform:scale(0.85);
+.sidebar
+  top 64px !important
+  width 280px !important
+  background rgba(14,14,14,.96) !important
+  border-right 1px solid var(--fc-line) !important
+  box-shadow inset -1px 0 rgba(255,255,255,.025)
+  padding 18px 14px 30px
+  scrollbar-width thin
+  scrollbar-color #444 transparent
+  .sidebar-links
+    padding 0 !important
+  .sidebar-group
+    margin 0 0 14px
+  .sidebar-heading
+    color #d3d3d3 !important
+    font-family var(--fc-pixel-font)
+    font-size .62rem
+    letter-spacing .06em
+    text-transform uppercase
+    padding 11px 12px 8px !important
+    border-bottom 1px solid #242424
+  a.sidebar-link
+    display block
+    color var(--fc-muted) !important
+    font-size .86rem
+    line-height 1.35
+    padding 8px 12px !important
+    border-left 2px solid transparent
+    transition background .16s ease, color .16s ease, border-color .16s ease
+    &:hover
+      color #fff !important
+      background #1b1b1b
+      text-decoration none
+    &.active
+      color #fff !important
+      background #252525
+      border-left-color #fff
+      box-shadow inset 3px 0 0 #777
+  .sidebar-sub-headers a
+    padding-left 25px !important
 
-// demo模块图标颜色
-body .vuepress-plugin-demo-block__wrapper
-  &,.vuepress-plugin-demo-block__display
-    border-color rgba(160,160,160,.3)
-  .vuepress-plugin-demo-block__footer:hover
-    .vuepress-plugin-demo-block__expand::before
-      border-top-color: $accentColor !important;
-      border-bottom-color: $accentColor !important;
-    svg
-      fill: $accentColor !important;
+.sidebar-mask
+  background rgba(0,0,0,.7) !important
 
-// 全文搜索框
+.page
+  min-height calc(100vh - 64px)
+  box-sizing border-box
+  padding-top 64px !important
+  padding-left 280px !important
+  background transparent !important
+  transition none
+  > *
+    max-width none !important
+
+.theme-vdoing-wrapper
+  width auto
+  box-sizing border-box
+  max-width none !important
+  margin 0 !important
+  padding 32px 280px 64px 48px !important
+  background transparent !important
+  box-shadow none !important
+  border-radius 0 !important
+  .content-wrapper
+    max-width 780px
+    margin 0 auto
+  .theme-vdoing-content:not(.custom)
+    max-width none
+    padding 0 !important
+    margin 0
+    background transparent !important
+    box-shadow none !important
+
+.articleInfo-wrap
+  max-width 780px !important
+  margin 0 auto 20px !important
+  padding 0 !important
+  color var(--fc-dim) !important
+  .breadcrumbs
+    line-height 1.8rem !important
+    a, span
+      color var(--fc-dim) !important
+      font-size .78rem
+      &:hover
+        color #fff !important
+  .info
+    color var(--fc-dim)
+
+.theme-vdoing-content
+  color var(--fc-text) !important
+  font-size 1rem
+  line-height 1.85
+  h1, h2, h3, h4, h5, h6
+    color #f1f1f1 !important
+    font-weight 700
+    letter-spacing .01em
+    text-shadow 2px 2px 0 #000
+    &:first-child
+      margin-top 0 !important
+  h1
+    font-family var(--fc-pixel-font)
+    font-size clamp(1.35rem, 2.5vw, 2rem)
+    line-height 1.35
+    padding 0 0 18px !important
+    border-bottom 1px solid var(--fc-line-bright)
+  h2
+    font-family var(--fc-pixel-font)
+    font-size 1.1rem
+    line-height 1.55
+    margin-top 38px !important
+    padding 0 0 12px !important
+    border-bottom 1px solid var(--fc-line)
+  h3
+    font-size 1.02rem
+    margin-top 30px !important
+    padding-left 12px
+    border-left 2px solid #777
+  h4, h5, h6
+    font-size .98rem
+  p, ul, ol
+    color #c8c8c8
+  strong
+    color #f0f0f0
+  a
+    color #d8d8d8 !important
+    text-decoration underline
+    text-decoration-color #666
+    text-underline-offset 3px
+    &:hover
+      color #fff !important
+      text-decoration-color #fff
+  blockquote
+    margin 24px 0
+    padding 12px 18px
+    color #bdbdbd
+    border-left 3px solid #777
+    background #141414
+  hr
+    border-top 1px solid var(--fc-line-bright)
+  code
+    color #ededed
+    background #1a1a1a
+    border 1px solid #333
+    border-radius 0
+    padding .15em .35em
+  pre
+    background #0b0b0b !important
+    border 1px solid #383838
+    border-radius 2px
+    box-shadow inset 0 0 0 1px rgba(255,255,255,.03), 5px 5px 0 rgba(0,0,0,.42)
+    code
+      border 0
+      background transparent
+  table
+    display table
+    background #111
+    border-color #444
+    th
+      color #eee
+      background #1d1d1d
+      font-family var(--fc-pixel-font)
+      font-size .65rem
+    th, td
+      border-color #3a3a3a
+    tr:nth-child(2n)
+      background #171717
+  img
+    filter grayscale(1) contrast(1.08)
+
+.right-menu-wrapper
+  position fixed !important
+  z-index 5
+  top 86px !important
+  right 26px !important
+  width 220px !important
+  margin 0 !important
+  float none !important
+  .right-menu-margin
+    margin 0 !important
+    border-left 1px solid var(--fc-line) !important
+    border-radius 0 !important
+    background transparent !important
+  .right-menu-title
+    padding 0 0 12px 16px !important
+    color #eee
+    font-family var(--fc-pixel-font)
+    font-size .65rem
+    background transparent !important
+    &:after
+      background var(--fc-line) !important
+      margin-top 12px
+  .right-menu-content
+    max-height calc(100vh - 150px)
+    background transparent !important
+    padding 4px 0 !important
+    .right-menu-item
+      padding 5px 14px !important
+      a
+        color var(--fc-dim) !important
+        font-size .8rem
+        text-decoration none
+      &.active
+        &:before
+          width 2px !important
+          height 16px !important
+          background #fff !important
+        a
+          color #fff !important
+
+.page-edit, .page-nav-wapper
+  max-width 780px
+  margin-left auto !important
+  margin-right auto !important
+  color var(--fc-dim)
+
+.footer
+  position relative
+  z-index 2
+  padding 30px 30px 38px 328px !important
+  color #6e6e6e !important
+  border-top 1px solid #222
+  background #0a0a0a
+  font-family 'Courier New', monospace
+  font-size .72rem
+  a
+    color #aaa !important
+
+.buttons
+  z-index 15
+  .button
+    border-radius 2px !important
+    background #1d1d1d !important
+    border 1px solid #444 !important
+    color #ddd !important
+    &:hover
+      background #333 !important
+
+// Third-party widgets inherit the same dark panel treatment.
 .suggestions
-  overflow: auto
-  max-height: calc(100vh - 6rem)
-  @media (max-width: 719px) {
-    width: 90vw;
-    min-width: 90vw!important;
-    margin-right: -20px;
-  }
-  .highlight
-    color: $accentColor
-    font-weight: bold
+  background #151515 !important
+  border 1px solid #3a3a3a
+  .suggestion
+    color #c8c8c8
+    &:hover
+      background #252525
+    .highlight
+      color #fff
+
+.gt-container
+  color #bdbdbd !important
+  .gt-header-textarea, .gt-comment-content, .gt-header-preview
+    color #d7d7d7 !important
+    background #151515 !important
+    border-color #3a3a3a !important
+  .gt-meta, .gt-comment-content
+    border-color #3a3a3a !important
+  .gt-comment-body
+    color #c8c8c8 !important
+  .gt-btn
+    color #111 !important
+    background #ddd !important
+    border-color #ddd !important
+    &:hover
+      background #fff !important
+  a
+    color #e5e5e5 !important
+
+@media (max-width: 1099px)
+  .theme-vdoing-wrapper
+    padding-right 48px !important
+  .right-menu-wrapper
+    display none !important
+
+@media (max-width: 719px)
+  .navbar
+    height 56px
+    padding 0 16px 0 54px
+    .site-name
+      font-size .58rem !important
+    .links
+      display none
+  .page
+    padding-top 56px !important
+    padding-left 0 !important
+  .sidebar
+    top 56px !important
+    width min(84vw, 280px) !important
+  .theme-vdoing-wrapper
+    padding 24px 18px 44px !important
+  .theme-vdoing-content
+    font-size .96rem
+    h1
+      font-size 1.1rem
+    h2
+      font-size .92rem
+    h3
+      font-size .98rem
+  .footer
+    padding 26px 18px 32px !important
+
+@media (prefers-reduced-motion: reduce)
+  body::before
+    animation none
