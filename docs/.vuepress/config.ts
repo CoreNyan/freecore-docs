@@ -29,7 +29,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 导航配置
     nav: [
       { text: '首页', link: '/' },
-      { text: '规则', link: '/server-rules/' },
+      { text: '规则', link: '/rules/server-rules/' },
       { text: '基础', link: '/basic/' },
       { text: '进阶', link: '/advanced/' },
     ],
