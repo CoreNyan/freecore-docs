@@ -3,7 +3,7 @@ title: 群规
 date: 2026-08-30 10:44:05
 permalink: /rules/group-rules
 categories:
-  - rules
+  - 规则
 tags:
   - 
 author: 

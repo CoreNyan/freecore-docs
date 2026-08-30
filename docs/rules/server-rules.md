@@ -5,7 +5,7 @@ sidebar: true
 article: true
 date: 2026-08-29 22:54:07
 categories: 
-  - server-rules
+  - 规则
 tags: 
   - 
 author: 

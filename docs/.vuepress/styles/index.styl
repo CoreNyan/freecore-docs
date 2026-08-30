@@ -632,7 +632,14 @@ body::before
     tr:nth-child(2n)
       background #171717
   img
-    filter grayscale(1) contrast(1.08)
+    // Article images keep their original colors and aspect ratio. Inline
+    // width/height attributes from GitHub uploads must not force distortion.
+    display block
+    width auto !important
+    max-width 100% !important
+    height auto !important
+    filter none !important
+    image-rendering auto
 
 // The vdoing theme injects a decorative bitmap before article titles. Keep
 // headings text-only; the site logo remains visible in the navbar/sidebar.

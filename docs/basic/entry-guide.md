@@ -3,7 +3,7 @@ title: 入服指南
 date: 2026-08-30 10:36:13
 permalink: /basic/entry-guide
 categories:
-  - basic
+  - 基础
 tags:
   - 
 author: 
@@ -23,8 +23,7 @@ author:
 
 ### 1. 下载并安装 HMCL 启动器
 
-前往 HMCL 官网下载最新版本并安装：
-`https://hmcl.huangyuhui.net/`
+前往[ HMCL 官网](https://hmcl.huangyuhui.net/)下载最新版本并安装
 
 ### 2. 注册皮肤站账号
 
@@ -45,6 +44,7 @@ https://account.freecore.cc
    https://account.freecore.cc/api/yggdrasil
    ```
    > 如果 HMCL 提示无法自动识别，请手动填写上方地址；若仍有问题，请联系服务器管理员确认最新地址。  
+     
    <img width="800" height="485" alt="image" src="https://github.com/user-attachments/assets/a5fec1c4-8ab2-480b-b1dd-c8375d65b7a7" />
 4. 使用刚才注册的皮肤站邮箱和密码登录<img width="792" height="487" alt="image" src="https://github.com/user-attachments/assets/ea692f45-262f-43fe-9933-c1f8d9f2659f" />
 5. 登录成功后，HMCL 账户列表中会出现你的角色，选中它作为当前登录账户<img width="799" height="492" alt="image" src="https://github.com/user-attachments/assets/8ccd0a7e-4b80-4261-a147-1da800bb77b1" />

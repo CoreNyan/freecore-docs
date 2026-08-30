@@ -29,12 +29,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 导航配置
     nav: [
       { text: '首页', link: '/' },
-      { text: '规则', link: '/rules/' },
+      { text: '规则', link: '/server-rules/' },
       { text: '基础', link: '/basic/' },
       { text: '进阶', link: '/advanced/' },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    logo: '/icon.png', // 导航栏logo
+    logo: '/docs.ico', // 导航栏logo
     repo: 'CoreNyan/freecore-docs', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
@@ -121,7 +121,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
   head: [
-    ['link', { rel: 'icon', href: '/icon.png' }], //favicons，资源放在public文件夹
+    ['link', { rel: 'icon', href: '/docs.ico' }], //favicons，资源放在public文件夹
     ['script', {}, "try { window.localStorage.removeItem('mode') } catch (e) {}"],
     ['script', { src: '/click-particles.js', defer: true }],
     ['script', { src: '/footer-label.js', defer: true }],
@@ -188,7 +188,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       {
         selector: '.theme-vdoing-content img:not(.no-zoom)', // 排除class是no-zoom的图片
         options: {
-          bgColor: 'rgba(0,0,0,0.6)',
+          // Keep the zoom overlay transparent so the image is not darkened.
+          // The overlay still captures clicks to close the zoom view.
+          bgColor: 'rgba(0,0,0,0)',
         },
       },
     ],
