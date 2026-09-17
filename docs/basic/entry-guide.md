@@ -83,7 +83,7 @@ https://account.freecore.cc
    |------|------|
    | 服务器名称 | FreeCore（可自定义） |
    | 服务器地址 | `mc.freecore.cc` |
-   | 端口 | `36505` |
+   | 端口 | `50000` |
 <img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/78beb178-bed6-480f-bd77-295a81be2a9a" />
 3. 保存后点击该服务器即可进入游戏！
 
