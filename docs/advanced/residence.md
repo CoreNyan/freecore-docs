@@ -7,8 +7,8 @@
 ## 一、圈地的基本原理
 
 圈地本质上就是：**用箭点两个"对角"，系统会自动把这 两点 之间的 长方体区域 框出来**，这块区域就是你的领地（Residence，简称 res）。
-
-
+  
+<img width="800" height="400" alt="res" src="https://github.com/user-attachments/assets/2bbe46bc-42e0-4455-8f89-def087c3c34f" />  
 
 只要点出 P1、P2 两个点，系统就会自动把 P1、P2 所在的长方形区域用红色粒子标记出来，**不需要把四个角都点一遍**。
 
@@ -49,10 +49,14 @@
 ```
 /res expand [格数]
 ```
+<img width="800" height="400" alt="res2" src="https://github.com/user-attachments/assets/823b2c9e-41c5-427e-a488-26faa7c84485" />  
+
 ### 收缩
 ```
 /res contract [格数]
 ```
+<img width="800" height="400" alt="res3" src="https://github.com/user-attachments/assets/de772b63-88bf-4435-a2d5-76d22903f455" />
+
 ---
 
 ## 四、常用指令
