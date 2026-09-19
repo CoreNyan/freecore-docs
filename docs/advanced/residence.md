@@ -55,7 +55,8 @@
 ```
 /res contract [格数]
 ```
-<img width="800" height="400" alt="res3" src="https://github.com/user-attachments/assets/de772b63-88bf-4435-a2d5-76d22903f455" />
+<img width="800" height="400" alt="res3" src="https://github.com/user-attachments/assets/1decb772-f605-4052-9b03-eedee8a3cde5" />  
+
 
 ---
 
