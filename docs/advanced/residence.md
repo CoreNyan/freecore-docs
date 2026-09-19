@@ -1,4 +1,16 @@
-# Res领地圈地教程
+---
+title: 圈地教学
+date: 2026-08-30 10:36:13
+permalink: /advanced/residence
+categories:
+  - 进阶
+tags:
+  - 
+author: 
+  name: FreeCore
+  link: https://github.com/CoreNyan
+---
+# Residence圈地教学
 
 > 本服圈地工具是 **箭矢（Arrow）**。
 

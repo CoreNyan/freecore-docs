@@ -69,6 +69,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           collapsable: false,
           children: [
             ['/advanced/advanced', '进阶指南'],
+            ['/advanced/residence', '圈地指南'],
           ],
         },
       ],
