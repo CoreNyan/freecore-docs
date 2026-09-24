@@ -7,7 +7,7 @@ import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
 import dayjs from 'dayjs'
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 
-const DOMAIN_NAME = 'docs.freecore.cc' // 域名 (不带https)
+const DOMAIN_NAME = 'docs.lynnhma.xyz' // 域名 (不带https)
 const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({

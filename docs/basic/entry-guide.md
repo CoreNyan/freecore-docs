@@ -30,7 +30,7 @@ author:
 打开浏览器，访问：
 
 ```
-https://account.freecore.cc
+https://account.lynnhma.xyz
 ```
 
 按照页面提示完成注册（邮箱 + 密码）。**这个账号将作为你在 FreeCore 服务器的唯一身份**，请牢记账号密码。
@@ -41,7 +41,7 @@ https://account.freecore.cc
 2. 选择「添加外置登录账户」（Authlib Injector / 外置账户登录） <img width="806" height="480" alt="image" src="https://github.com/user-attachments/assets/a4011036-d885-43f0-b573-9729dcdc3d75" />
 3. 添加认证服务器时，认证服务地址填写：
    ```
-   https://account.freecore.cc/api/yggdrasil
+   https://account.lynnhma.xyz/api/yggdrasil
    ```
    > 如果 HMCL 提示无法自动识别，请手动填写上方地址；若仍有问题，请联系服务器管理员确认最新地址。  
      
@@ -56,7 +56,7 @@ https://account.freecore.cc
 2. 进入游戏后，点击「多人游戏」→「添加服务器」
 3. 服务器地址填写：
    ```
-   mc.freecore.cc
+   mc.lynnhma.xyz
    ```
 4. 保存后即可点击进入，开始游戏！
 
@@ -82,7 +82,7 @@ https://account.freecore.cc
    | 项目 | 内容 |
    |------|------|
    | 服务器名称 | FreeCore（可自定义） |
-   | 服务器地址 | `mc.freecore.cc` |
+   | 服务器地址 | `mc.lynnhma.xyz` |
    | 端口 | `50000` |
 <img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/78beb178-bed6-480f-bd77-295a81be2a9a" />
 3. 保存后点击该服务器即可进入游戏！
@@ -91,8 +91,8 @@ https://account.freecore.cc
 
 ## 常见问题
 
-- **忘记皮肤站密码怎么办？** 前往 `account.freecore.cc` 使用找回密码功能，或联系管理员处理。
-- **电脑端提示认证失败？** 检查 HMCL 中的认证服务器地址是否正确，以及网络是否能正常访问 `account.freecore.cc`。
+- **忘记皮肤站密码怎么办？** 前往 `account.lynnhma.xyz` 使用找回密码功能，或联系管理员处理。
+- **电脑端提示认证失败？** 检查 HMCL 中的认证服务器地址是否正确，以及网络是否能正常访问 `account.lynnhma.xyz`。
 - **手机端连接超时？** 请确认端口号 `50000` 填写正确，并检查手机网络是否稳定。
 
 如有其他问题，可在交流群内寻求帮助。祝你在 FreeCore 玩得愉快！
