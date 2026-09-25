@@ -83,7 +83,7 @@ https://account.lynnhma.xyz
    |------|------|
    | 服务器名称 | FreeCore（可自定义） |
    | 服务器地址 | `mc.lynnhma.xyz` |
-   | 端口 | `50000` |
+   | 端口 | `25566` |
 <img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/78beb178-bed6-480f-bd77-295a81be2a9a" />
 3. 保存后点击该服务器即可进入游戏！
 
@@ -93,6 +93,6 @@ https://account.lynnhma.xyz
 
 - **忘记皮肤站密码怎么办？** 前往 `account.lynnhma.xyz` 使用找回密码功能，或联系管理员处理。
 - **电脑端提示认证失败？** 检查 HMCL 中的认证服务器地址是否正确，以及网络是否能正常访问 `account.lynnhma.xyz`。
-- **手机端连接超时？** 请确认端口号 `50000` 填写正确，并检查手机网络是否稳定。
+- **手机端连接超时？** 请确认端口号 `25566` 填写正确，并检查手机网络是否稳定。
 
 如有其他问题，可在交流群内寻求帮助。祝你在 FreeCore 玩得愉快！
