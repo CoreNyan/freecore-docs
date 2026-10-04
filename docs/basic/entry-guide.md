@@ -80,9 +80,9 @@ https://account.lynnhma.xyz
    | Java版线路 | 地址 |
    |------|------|
    | 主线路（推荐） | `mc.lynnhma.xyz`   |
-   | 移动线路（备用） | `yd.lynnhma.xyz`  |
-   | 联通线路（备用） | `lt.lynnhma.xyz`  |
-   | 电信线路（备用） | `dx.lynnhma.xyz`  |
+   | 移动线路 | `yd.lynnhma.xyz`  |
+   | 联通线路 | `lt.lynnhma.xyz`  |
+   | 电信线路 | `dx.lynnhma.xyz`  |
 
 > 注意：由于移动、联通、电信线路的节点不稳定，强烈推荐使用主线路进行连接（移动用户不稳定的时候请使用移动线路）
 3. 保存后即可点击进入，开始游戏！
@@ -109,9 +109,9 @@ https://account.lynnhma.xyz
    | Bedrock版线路 | 地址 | 端口 |
    |------|------|------|
    | 主线路（推荐） | `mc.lynnhma.xyz` | `25566` |
-   | 移动线路（推荐） | `yd.lynnhma.xyz` | `50000` |
-   | 联通线路（推荐） | `lt.lynnhma.xyz` | `50000` |
-   | 电信线路（推荐） | `dx.lynnhma.xyz` | `50000` |
+   | 移动线路 | `yd.lynnhma.xyz` | `50000` |
+   | 联通线路 | `lt.lynnhma.xyz` | `50000` |
+   | 电信线路 | `dx.lynnhma.xyz` | `50000` |
       
   > 服务器名称随便填  
 <img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/78beb178-bed6-480f-bd77-295a81be2a9a" />
@@ -127,7 +127,7 @@ https://account.lynnhma.xyz
 <details>
 <summary>小秘密 awa</summary>
 
-## 因为联通和电信玩家网络较为稳定，所以我们把 `lt.lynnhma.xyz` 和 `dx.lynnhma.xyz` 解析到了 `mc.lynnhma.xyz`，OWO!
+## 其实联通、移动、电信线路用的是同一个节点！OWO
 
 </details>
 
