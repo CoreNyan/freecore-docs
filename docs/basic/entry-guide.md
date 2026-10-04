@@ -79,12 +79,11 @@ https://account.lynnhma.xyz
 2. 填写服务器地址：
    | Java版线路 | 地址 |
    |------|------|
-   | 主线路（推荐） | `mc.lynnhma.xyz`   |
+   | 主线路 | `mc.lynnhma.xyz`   |
    | 移动线路 | `yd.lynnhma.xyz`  |
    | 联通线路 | `lt.lynnhma.xyz`  |
    | 电信线路 | `dx.lynnhma.xyz`  |
 
-> 注意：由于移动、联通、电信线路的节点不稳定，强烈推荐使用主线路进行连接（移动用户不稳定的时候请使用移动线路）
 3. 保存后即可点击进入，开始游戏！
 
 ---
@@ -108,7 +107,7 @@ https://account.lynnhma.xyz
 
    | Bedrock版线路 | 地址 | 端口 |
    |------|------|------|
-   | 主线路（推荐） | `mc.lynnhma.xyz` | `25566` |
+   | 主线路 | `mc.lynnhma.xyz` | `25566` |
    | 移动线路 | `yd.lynnhma.xyz` | `50000` |
    | 联通线路 | `lt.lynnhma.xyz` | `50000` |
    | 电信线路 | `dx.lynnhma.xyz` | `50000` |
